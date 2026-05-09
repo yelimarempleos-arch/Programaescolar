@@ -4,50 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Escolar</title>
+    <link rel="icon" href="img1.jpg">
+    <!-- Enlace a CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <style>
+        body { background-color: #f8f9fa; }
+        .margen-superior { margin-top: 30px; }
+    </style>
+</head>
+<body>
 
-<div class="container my-4">
-    <!-- HEADER -->
-    <header class="text-center py-4 mb-4 bg-light rounded shadow-sm">
-        <h1 class="display-5 fw-bold text-primary">U.E.E. VICENTE WALLIS</h1>
-        <p class="lead">Sistema de Registro de Alumnos</p>
-    </header>
+    <div class="container margen-superior">
+        <header>
+            <h1 class="text-center mb-4" style="background-color: #d1f7ee;">Registro U.E.E. VICENTE WALLIS </h1>
+        </header>
+
+    <!-- Tarjetas Cards -->
+    <section class="row text-center mb-4">
+        <div class="col-md-4">
+            <div class="card bg-primary text-white p-3">
+                <h5>Inscritos</h5>
+                <h3>3</h3>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-warning p-3">
+                <h5>Pendientes</h5>
+                <h3>2</h3>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-success text-white p-3">
+                <h5>Cupos</h5>
+                <h3>45</h3>
+            </div>
+        </div>
+    </section> 
     
-    HICE UN CAMBIO EN MAIN
+    </div>
 
-    <!-- CARDS  -->
-    <section class="row g-3 mb-5 text-center">
-        <div class="col-md-4">
-            <div class="card border-0 bg-primary text-white shadow">
-                <div class="card-body">
-                    <h6>Inscritos</h6>
-                    <h2 id="contador" class="display-6 fw-bold">3</h2>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card border-0 bg-warning shadow">
-                <div class="card-body">
-                    <h6>Pendientes</h6>
-                    <h2 class="display-6 fw-bold">1</h2>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card border-0 bg-success text-white shadow">
-                <div class="card-body">
-                    <h6>Cupos Disponibles</h6>
-                    <h2 class="display-6 fw-bold">45</h2>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="row g-4">
-      <!--  fragmento FORMULARIO comit desde el ramal  -->
-        <div class="col-md-4">
+        <!-- aporte diego form -->
+        <aside class="col-md-4">
             <div class="card p-3 shadow">
-                <h4 class="text-center">Nuevo Alumno</h4>
+                <h4 class="text-center">Nuevo ingreso </h4>
                 <hr>
                 <form id="formulario">
                     <input type="text" id="nombre" class="form-control mb-2" placeholder="Nombre" required>
@@ -62,6 +62,9 @@
                     <button type="submit" class="btn btn-dark w-100">Guardar</button>
                 </form>
             </div>
-        </div>
+        </aside>
 
-     
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
